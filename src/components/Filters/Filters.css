@@ -9,7 +9,12 @@
 
 .Filters{
     background-color: white !important;
-    width: 250px !important;
+    width: 220px !important;
     margin:  20px !important;
 }
 
+
+.filterContainer > div {
+    display: flex;
+    align-items: center;
+}
