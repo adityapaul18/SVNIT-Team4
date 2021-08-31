@@ -78,8 +78,8 @@ function Login() {
                         <Avatar className="LoginAvatar" />
                         <TextField value={name} onChange={(e) => setname(e.target.value)} className="LoginFilters" label="name" variant="outlined" />
                         <TextField value={mail} onChange={(e) => setmail(e.target.value)} className="LoginFilters" label="email" variant="outlined" />
-                        <TextField value={password} onChange={(e) => setpassword(e.target.value)} className="LoginFilters" label="password" variant="outlined" />
-                        <TextField value={passwordc} onChange={(e) => setpasswordc(e.target.value)}className="LoginFilters" label="confirm password" variant="outlined" />
+                        <TextField value={password} type="password" onChange={(e) => setpassword(e.target.value)} className="LoginFilters" label="password" variant="outlined" />
+                        <TextField value={passwordc} type="password" onChange={(e) => setpasswordc(e.target.value)}className="LoginFilters" label="confirm password" variant="outlined" />
                         <Button className="Logupbtn" variant="contained" onClick={signup}>Sign up</Button>
                         <div style={{display:"flex",alignItems:"center"}} >Already having an account ? <IconButton><span onClick={() => setset(0)} style={{color:"rgb(0, 106, 255)",cursor:"pointer",fontSize:"15px"}} >sign in</span></IconButton></div>
                     </>
@@ -87,7 +87,7 @@ function Login() {
                     <>
                         <Avatar className="LoginAvatar" />
                         <TextField value={mail} onChange={(e) => setmail(e.target.value)} className="LoginFilters" label="email" variant="outlined" />
-                        <TextField  value={password} onChange={(e) => setpassword(e.target.value)} className="LoginFilters" label="password" variant="outlined" />
+                        <TextField  value={password} type="password" onChange={(e) => setpassword(e.target.value)} className="LoginFilters" label="password" variant="outlined" />
                         <Button className="Loginbtn" variant="contained" onClick={signin2}>Sign in</Button>
                         <div style={{display:"flex",alignItems:"center"}} >Not having an account ? <IconButton><span onClick={() => setset(1)} style={{color:"rgb(0, 106, 255)",cursor:"pointer",fontSize:"15px"}} >sign up</span></IconButton></div>
                     </>
