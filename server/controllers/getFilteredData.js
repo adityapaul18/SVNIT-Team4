@@ -1,9 +1,9 @@
 const fs = require('fs');
 
-function filteredData(key, startDate, endDate) {
+const filteredData = async (key, startDate, endDate) => {
   var data = fs.readFileSync('Stock_List.json');
 
-  const jsonData = JSON.parse(data);
+  const jsonData = await JSON.parse(data);
   const filteredData = jsonData.filter((item) => item.key === key);
   const simplifiedData = filteredData.map((item) => {
     return {
@@ -23,6 +23,6 @@ function filteredData(key, startDate, endDate) {
   if (!startDate && !endDate) {
     return simplifiedData;
   } else return dataByDate;
-}
+};
 
 module.exports = filteredData;
