@@ -13,13 +13,14 @@ function Compinfo(props) {
             axios.get('https://cloud.iexapis.com/stable/stock/'+ company +'/company?token=pk_e65e850dee0d47a8b9a8aac91e1fd131')
             .then(function (response) {
                 setdata(response.data);
-                console.log(data);
             })
             .catch(function (error) {
                 console.log(error);
             })
+            .then( function () {
+                // setShowInfo(false);
+            })
         }
-        setShowInfo(false);
         isInitial = false;
     }, [props.info])
     function clickToggleHandler(){

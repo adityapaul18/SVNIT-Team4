@@ -12,7 +12,6 @@ function App() {
     const [comp, setComp] =useState("AAPL")
     function company(comp){
         setComp(comp);
-        console.log(comp);
     }
     return (
         <div className="App">

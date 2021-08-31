@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import { Button, MenuItem, TextField } from '@material-ui/core'
+import React, { useEffect, useState } from 'react'
+import { Button, MenuItem, TextField } from '@material-ui/core';
+import { Autocomplete } from '@material-ui/lab';
 import './Filters.css';
 import moment from 'moment';
 import axios from 'axios';
@@ -12,6 +13,15 @@ function Filters(props) {
     const [histname, sethistname] = useState("")
     const [chartdata, setchartdata] = useState([])
 
+    const [symbols,setSymbols] = useState([]);
+    useEffect(() => {
+        axios.post('http://localhost:5000/')
+            .then((res) => {
+                console.log(res.data);
+                setSymbols(res.data);
+            })
+            .catch((err) => console.log(err))
+    }, [])
 
     const ftch = () => {
         var dateto = moment(todate).format('YYYY-MM-DD');
@@ -29,10 +39,16 @@ function Filters(props) {
             })
             .catch((err) => console.log(err))
     }
-
     return (
         <div className="filterContainer" >
             <div>
+                <Autocomplete
+                id="combo-box-demo"
+                options={symbols}
+                getOptionLabel={(option) => option}
+                style={{ width: 300 }}
+                renderInput={(params) => <TextField {...params} label="Search Stocks" variant="outlined" onBlur ={(e) => {props.getCompany(e.target.value)}}/>}
+                />
                 <TextField value={comp} onChange={(e) => { setcomp(e.target.value); props.getCompany(e.target.value) }} className="Filters" select variant="outlined" label="Company">
                     <MenuItem key="AMZN" value="AMZN">AMZN</MenuItem>
                     <MenuItem key="TSLA" value="TSLA">TSLA</MenuItem>
