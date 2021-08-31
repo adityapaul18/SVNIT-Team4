@@ -1,0 +1,18 @@
+.Headercont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.username{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.logout{
+    background-color: rgb(214, 10, 10) !important;
+    color: white !important;
+}

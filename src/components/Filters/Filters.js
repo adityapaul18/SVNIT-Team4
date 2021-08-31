@@ -11,7 +11,6 @@ function Filters(props) {
     const [fromdate, setfromdate] = useState(new Date(new Date(date.getFullYear(), date.getMonth(), 1)))
     const [todate, settodate] = useState(new Date())
     const [histname, sethistname] = useState("")
-    const [chartdata, setchartdata] = useState([])
 
     const [symbols,setSymbols] = useState([]);
     useEffect(() => {
@@ -35,7 +34,7 @@ function Filters(props) {
         axios.post('http://localhost:5000/data', data)
             .then((res) => {
                 console.log(res);
-                setchartdata(res)
+                props.setchartdata(res)
             })
             .catch((err) => console.log(err))
     }
@@ -57,8 +56,8 @@ function Filters(props) {
                     <MenuItem key="MA" value="MA">MA</MenuItem>
                     <MenuItem key="PG" value="PG">PG</MenuItem>
                 </TextField>
-                <TextField value={fromdate} onChange={(e) => { setfromdate(e.target.value) }} className="Filters" type="date" variant="outlined" />
-                <TextField value={todate} onChange={(e) => { settodate(e.target.value) }} className="Filters" type="date" variant="outlined" />
+                from <TextField value={fromdate} onChange={(e) => { setfromdate(e.target.value) }} className="Filters" type="date" variant="outlined" />
+                to <TextField value={todate} onChange={(e) => { settodate(e.target.value) }} className="Filters" type="date" variant="outlined" />
                 <Button className="moreinfoBtn" variant="contained" onClick={() => ftch()} >Filter</Button>
             </div>
             <div><TextField value={histname} onChange={(e) => { sethistname(e.target.value) }} className="Filters" select variant="outlined" label="History">
