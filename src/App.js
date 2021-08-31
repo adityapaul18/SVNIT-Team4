@@ -1,16 +1,22 @@
+import { useState } from 'react';
+import {
+    BrowserRouter as Router, Route, Switch
+} from "react-router-dom";
 import './App.css';
 import Chart from './components/Charts/Chart';
 import Compinfo from './components/Compinfo/Compinfo';
 import Filters from './components/Filters/Filters';
-import {
-    BrowserRouter as Router, Switch, Route, Link
-} from "react-router-dom";
-import Login from './components/Login/Login';
 import Header from './components/Header/Header';
-import { useState } from 'react';
+import Login from './components/Login/Login';
+// import { useState } from 'react';
 
 function App() {
     const [chartdata, setchartdata] = useState([])
+    const [comp, setComp] =useState("AAPL")
+    function company(comp){
+        setComp(comp);
+        console.log(comp);
+    }
     return (
         <div className="App">
             <Router>
@@ -20,10 +26,11 @@ function App() {
                     </Route>
                     <Route exact path="/home">
                         <div>
+                            <Filters getCompany={company}/>
                             <Header/>
                             <Filters chartdata={chartdata} setchartdata={setchartdata} />
                             <Chart />
-                            <Compinfo />
+                            <Compinfo info={comp}/>
                         </div>
                     </Route>
                     <Route exact path="/login">
