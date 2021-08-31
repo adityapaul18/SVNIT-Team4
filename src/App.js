@@ -29,7 +29,7 @@ function App() {
                             <Header/>
                             <Filters chartdata={chartdata} setchartdata={setchartdata}  getCompany={company}/>
                             {/* <Filters /> */}
-                            <Chart />
+                            <Chart chartdata={chartdata} />
                             <Compinfo info={comp}/>
                         </div>
                     </Route>
