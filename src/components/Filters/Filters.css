@@ -1,0 +1,15 @@
+.filterContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(177, 177, 177, 0.333);
+    border-radius: 20px;
+    
+}
+
+.Filters{
+    background-color: white !important;
+    width: 250px !important;
+    margin:  20px !important;
+}
+
