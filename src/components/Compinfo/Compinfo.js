@@ -22,7 +22,7 @@ function Compinfo(props) {
         setShowInfo(false);
         isInitial = false;
     }, [props.info])
-    function clickToggleHandler(){
+    const clickToggleHandler =() => {
         setShowInfo(true);    
     }
     return (

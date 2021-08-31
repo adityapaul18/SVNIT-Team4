@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import CandlestickChart from '../financialcharts/CandlestickChart';
 import OhlcChart from '../financialcharts/OHLCChart'
 import './Chart.css'
 
@@ -25,6 +26,7 @@ function Chart({ chartdata }) {
         <div className="ChartContainer" >
             <div className="ChartBox">
               <OhlcChart data={data} /> 
+              <CandlestickChart data={data}/>
             </div>
         </div>
     )
