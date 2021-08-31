@@ -9,8 +9,7 @@ User can search the different stocks based on the symbols and view the chart. He
 2. Go into root directory and run "npm start"
 3. email for testing- w@mail.com password-111222
 
-![image](https://user-images.githubusercontent.com/62583380/131584538-a7d70ca6-5953-4321-aa8b-fa0904495e77.png)
-![image](https://user-images.githubusercontent.com/62583380/131584577-c028c0af-69ed-4934-9dd9-84129bc757aa.png)
+![image](https://user-images.githubusercontent.com/62583380/131584538-a7d70ca6-5953-4321-aa8b-fa0904495e77.png)![image](https://user-images.githubusercontent.com/62583380/131584718-7657f344-2ee8-4491-aa47-aef98c6123c7.png)
 ![image](https://user-images.githubusercontent.com/62583380/131584610-42d50ec6-c63d-46e2-beec-5937a1b88834.png)
 
 ## Credits  
