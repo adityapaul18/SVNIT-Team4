@@ -26,9 +26,9 @@ function App() {
                     </Route>
                     <Route exact path="/home">
                         <div>
-                            <Filters getCompany={company}/>
                             <Header/>
-                            <Filters chartdata={chartdata} setchartdata={setchartdata} />
+                            <Filters chartdata={chartdata} setchartdata={setchartdata}  getCompany={company}/>
+                            {/* <Filters /> */}
                             <Chart />
                             <Compinfo info={comp}/>
                         </div>
