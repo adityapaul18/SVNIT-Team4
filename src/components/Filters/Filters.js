@@ -4,13 +4,12 @@ import './Filters.css';
 import moment from 'moment';
 import axios from 'axios';
 
-function Filters() {
+function Filters({chartdata,setchartdata}) {
     const [comp, setcomp] = useState("")
     var date = new Date();
     const [fromdate, setfromdate] = useState(new Date(new Date(date.getFullYear(), date.getMonth(), 1)))
     const [todate, settodate] = useState(new Date())
     const [histname, sethistname] = useState("")
-    const [chartdata, setchartdata] = useState([])
 
 
     const ftch = () => {
@@ -41,8 +40,8 @@ function Filters() {
                     <MenuItem key="MA" value="MA">MA</MenuItem>
                     <MenuItem key="PG" value="PG">PG</MenuItem>
                 </TextField>
-                <TextField value={fromdate} onChange={(e) => { setfromdate(e.target.value) }} className="Filters" type="date" variant="outlined" />
-                <TextField value={todate} onChange={(e) => { settodate(e.target.value) }} className="Filters" type="date" variant="outlined" />
+                from <TextField value={fromdate} onChange={(e) => { setfromdate(e.target.value) }} className="Filters" type="date" variant="outlined" />
+                to <TextField value={todate} onChange={(e) => { settodate(e.target.value) }} className="Filters" type="date" variant="outlined" />
                 <Button className="moreinfoBtn" variant="contained" onClick={() => ftch()} >Filter</Button>
             </div>
             <div><TextField value={histname} onChange={(e) => { sethistname(e.target.value) }} className="Filters" select variant="outlined" label="History">

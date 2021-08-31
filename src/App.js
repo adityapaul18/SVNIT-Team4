@@ -7,8 +7,10 @@ import {
 } from "react-router-dom";
 import Login from './components/Login/Login';
 import Header from './components/Header/Header';
+import { useState } from 'react';
 
 function App() {
+    const [chartdata, setchartdata] = useState([])
     return (
         <div className="App">
             <Router>
@@ -19,7 +21,7 @@ function App() {
                     <Route exact path="/home">
                         <div>
                             <Header/>
-                            <Filters />
+                            <Filters chartdata={chartdata} setchartdata={setchartdata} />
                             <Chart />
                             <Compinfo />
                         </div>
