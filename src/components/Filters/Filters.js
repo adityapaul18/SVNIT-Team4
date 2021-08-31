@@ -4,7 +4,7 @@ import './Filters.css';
 import moment from 'moment';
 import axios from 'axios';
 
-function Filters() {
+function Filters(props) {
     const [comp, setcomp] = useState("")
     var date = new Date();
     const [fromdate, setfromdate] = useState(new Date(new Date(date.getFullYear(), date.getMonth(), 1)))
@@ -22,7 +22,7 @@ function Filters() {
             endDate: dateto
         }
         console.log(data)
-        axios.get('www.localhost:5000/data', data)
+        axios.post('/data', data)
             .then((res) => {
                 console.log(res);
                 setchartdata(res)
@@ -33,7 +33,7 @@ function Filters() {
     return (
         <div className="filterContainer" >
             <div>
-                <TextField value={comp} onChange={(e) => { setcomp(e.target.value) }} className="Filters" select variant="outlined" label="Company">
+                <TextField value={comp} onChange={(e) => { setcomp(e.target.value); props.getCompany(e.target.value) }} className="Filters" select variant="outlined" label="Company">
                     <MenuItem key="AMZN" value="AMZN">AMZN</MenuItem>
                     <MenuItem key="TSLA" value="TSLA">TSLA</MenuItem>
                     <MenuItem key="WMT" value="WMT">WMT</MenuItem>

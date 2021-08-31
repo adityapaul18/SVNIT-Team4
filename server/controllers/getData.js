@@ -1,6 +1,7 @@
 const filteredData = require('./getFilteredData.js');
 
 const getData = (req, res) => {
+  console.log('here');
   const { key, startDate, endDate } = req.body;
   try {
     const sDate = new Date(startDate);
