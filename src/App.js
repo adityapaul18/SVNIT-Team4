@@ -6,9 +6,15 @@ import {
     BrowserRouter as Router, Switch, Route, Link
 } from "react-router-dom";
 import Login from './components/Login/Login';
+import { useState } from 'react';
 import Header from './components/Header/Header';
 
 function App() {
+    const [comp, setComp] =useState("AAPL")
+    function company(comp){
+        setComp(comp);
+        console.log(comp);
+    }
     return (
         <div className="App">
             <Router>
@@ -18,10 +24,11 @@ function App() {
                     </Route>
                     <Route exact path="/home">
                         <div>
+                            <Filters getCompany={company}/>
                             <Header/>
                             <Filters />
                             <Chart />
-                            <Compinfo />
+                            <Compinfo info={comp}/>
                         </div>
                     </Route>
                     <Route exact path="/login">

@@ -1,0 +1,196 @@
+[33mcommit fa1a903dd6d4d4fddf65525cd787da703954cb20[m[33m ([m[1;36mHEAD -> [m[1;32mteam4[m[33m)[m
+Merge: 9b12dcf 8c53d1a
+Author: Anash <anashshelat@gmail.com>
+Date:   Wed Sep 1 00:35:07 2021 +0530
+
+    Conflict Resolved
+
+[33mcommit 9b12dcf5b5c34b2415afbd91876222e5c10f993b[m
+Author: Anash <anashshelat@gmail.com>
+Date:   Wed Sep 1 00:24:53 2021 +0530
+
+    Company Information Displayed
+
+[33mcommit 8c53d1afc45b42b64aceb091cb5e9743ea6d2695[m[33m ([m[1;31mupstream/team4[m[33m)[m
+Author: Aditya Paul <aditya.paul18@gmail.com>
+Date:   Wed Sep 1 00:23:42 2021 +0530
+
+    user login/up
+
+[33mcommit 27c986242c75da60d33da8e4f9cedc5c5676254f[m
+Author: Aditya Paul <aditya.paul18@gmail.com>
+Date:   Tue Aug 31 23:16:38 2021 +0530
+
+    api works
+
+[33mcommit 9c0d6a364ee4d1f1b7eac5f0b7d6de2e632935a4[m
+Merge: a9aff26 528b5c0
+Author: Aditya Paul <62583380+adityapaul18@users.noreply.github.com>
+Date:   Tue Aug 31 23:11:31 2021 +0530
+
+    Merge pull request #4 from Om-Mahawar/team4
+    
+    Resolved Api error
+
+[33mcommit a9aff26c1982971ed36ef0458049b882ccdd1be1[m
+Merge: 493e8cc eb7292f
+Author: Aditya Paul <62583380+adityapaul18@users.noreply.github.com>
+Date:   Tue Aug 31 23:10:49 2021 +0530
+
+    Merge pull request #3 from naumankazi/team4
+    
+    Team4
+
+[33mcommit 528b5c0359868c9d3746d97e38dc191f888d9642[m
+Author: Om Mahawar <ommahawar76@gmail.com>
+Date:   Tue Aug 31 23:09:40 2021 +0530
+
+    Resolved Api error
+
+[33mcommit eb7292f374ca5c9cc5677606f8fd00309bf327e3[m
+Author: Kazi Nauman <69042868+naumankazi@users.noreply.github.com>
+Date:   Tue Aug 31 22:46:27 2021 +0530
+
+    Update README.md
+
+[33mcommit 33c6b4f8510c836fdbf1795dbd7a447318ce0801[m
+Author: Kazi Nauman <69042868+naumankazi@users.noreply.github.com>
+Date:   Tue Aug 31 22:44:59 2021 +0530
+
+    Update Readme.md
+
+[33mcommit 8e2874738667e0cd891e89fda9f31a30c207d552[m
+Merge: a7530e3 493e8cc
+Author: Anash <anashshelat@gmail.com>
+Date:   Tue Aug 31 22:38:40 2021 +0530
+
+    Merge branch 'team4' of https://github.com/adityapaul18/SVNIT-Team4 into team4
+
+[33mcommit 493e8cc9aa52f500531a596954f98d986cfc207a[m
+Author: Aditya Paul <aditya.paul18@gmail.com>
+Date:   Tue Aug 31 22:31:19 2021 +0530
+
+    api
+
+[33mcommit a7530e38eec0cd4cb2c404e6306b53f36f41bbd2[m
+Merge: ddbcd5f 9ffaf4c
+Author: Anash <anashshelat@gmail.com>
+Date:   Tue Aug 31 22:30:55 2021 +0530
+
+    Conflicts Resolved
+
+[33mcommit 9ffaf4c4ab05f95910429312e0d1ac55b94fedff[m
+Author: Aditya Paul <aditya.paul18@gmail.com>
+Date:   Tue Aug 31 21:25:25 2021 +0530
+
+    api integrate s1
+
+[33mcommit d1d378c0cf7d123a3504d68c201d72c806ee3487[m
+Merge: 82c8cc6 152cb19
+Author: Aditya Paul <62583380+adityapaul18@users.noreply.github.com>
+Date:   Tue Aug 31 20:21:40 2021 +0530
+
+    Merge pull request #2 from Om-Mahawar/team4
+    
+    Added backend route and filteringData function
+
+[33mcommit 152cb1910f8c001f2abb4f30d7b3dbb31e2f1661[m
+Author: Om Mahawar <ommahawar76@gmail.com>
+Date:   Tue Aug 31 20:19:19 2021 +0530
+
+    Added backend route and filteringData function
+
+[33mcommit ddbcd5f65249facbc844ec195f249899aada4286[m
+Merge: 0269ef0 82c8cc6
+Author: Anash <anashshelat@gmail.com>
+Date:   Tue Aug 31 20:00:10 2021 +0530
+
+    Merged
+
+[33mcommit 82c8cc6c19a8c95dc34208787ed01bd86ca58804[m[33m ([m[1;31mupstream/main[m[33m)[m
+Author: Aditya Paul <62583380+adityapaul18@users.noreply.github.com>
+Date:   Tue Aug 31 19:15:22 2021 +0530
+
+    Delete server/node_modules directory
+
+[33mcommit 45cecbc3f46465c5b024e0a0bd4e9e5628bf9036[m
+Author: Aditya Paul <aditya.paul18@gmail.com>
+Date:   Tue Aug 31 19:13:20 2021 +0530
+
+    new error solve
+
+[33mcommit 2a9c296c53c223e156dd9e09c16c74331363b378[m
+Author: Aditya Paul <aditya.paul18@gmail.com>
+Date:   Tue Aug 31 19:11:42 2021 +0530
+
+    git ignore
+
+[33mcommit 0269ef095f2ca591f5a770374bb24befa1be00a1[m[33m ([m[1;31morigin/team4[m[33m)[m
+Author: Anash <anashshelat@gmail.com>
+Date:   Tue Aug 31 19:11:31 2021 +0530
+
+    Fixed
+
+[33mcommit 457e3a2aa140c4c401a6a129b2dc6b682385ab98[m
+Merge: dd053ce 7c44b6c
+Author: Aditya Paul <aditya.paul18@gmail.com>
+Date:   Tue Aug 31 19:05:24 2021 +0530
+
+    merge
+
+[33mcommit dd053ceac5502c048756062689a2f4f3c2e7d760[m
+Author: Aditya Paul <aditya.paul18@gmail.com>
+Date:   Tue Aug 31 19:02:32 2021 +0530
+
+    login page
+
+[33mcommit 69b82e4d822538150526e5140ea9b9d4e850d72f[m
+Author: Aditya Paul <aditya.paul18@gmail.com>
+Date:   Tue Aug 31 19:01:42 2021 +0530
+
+    login page
+
+[33mcommit 7c44b6c94223c2329eff55425b4b9c153d1ee1b5[m
+Merge: 707d15f 659c216
+Author: Aditya Paul <62583380+adityapaul18@users.noreply.github.com>
+Date:   Tue Aug 31 19:01:16 2021 +0530
+
+    Merge pull request #1 from anash3420/team4
+    
+    Team4
+
+[33mcommit 659c216122a50415846dc006cb2e64c36844117a[m
+Author: Anash <anashshelat@gmail.com>
+Date:   Tue Aug 31 18:39:56 2021 +0530
+
+    File Reducer Function implemented
+
+[33mcommit 811babb0e3ab9cb74a264579c21f834adab1518d[m
+Author: Aditya Paul <aditya.paul18@gmail.com>
+Date:   Tue Aug 31 18:05:37 2021 +0530
+
+    3 sections
+
+[33mcommit 2d688fe1a1fd6c673e4e15c7446ef2f7051a6748[m
+Author: Aditya Paul <aditya.paul18@gmail.com>
+Date:   Tue Aug 31 17:53:21 2021 +0530
+
+    2 sections
+
+[33mcommit 9850d680010eea313b08ffd5a8c9c36f86c973b8[m
+Author: Aditya Paul <aditya.paul18@gmail.com>
+Date:   Tue Aug 31 15:44:15 2021 +0530
+
+    server
+
+[33mcommit bc1666dff945d8344cca3e40bad03ec96876aaae[m
+Author: Aditya Paul <aditya.paul18@gmail.com>
+Date:   Tue Aug 31 15:41:20 2021 +0530
+
+    start
+
+[33mcommit 707d15f0100832e0dab0f0ed4601cf40c2f7bf9e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Deven Parab <parab_deven@yahoo.co.in>
+Date:   Mon Aug 30 19:46:02 2021 +0530
+
+    Initial commit
