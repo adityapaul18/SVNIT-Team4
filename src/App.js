@@ -1,5 +1,6 @@
 import './App.css';
 import Chart from './components/Charts/Chart';
+import Compinfo from './components/Compinfo/Compinfo';
 import Filters from './components/Filters/Filters';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <div>
         <Filters/>
         <Chart/>
+        <Compinfo/>
       </div>
     </div>
   );

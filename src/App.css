@@ -1,6 +1,7 @@
 .App {
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(to right, rgb(198, 213, 255),rgb(255, 255, 255),rgb(198, 213, 255)); 
 }
 .App > div {
   width: 90%;
