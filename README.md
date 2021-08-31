@@ -7,7 +7,7 @@ Analytical Server "OHLC" (Open/High/Low/Close) time series based on the ‘Stock
 User can search the different stocks based on the symbols and view the chart. He/she can filter the stock’s performance on specific date range. He/she can visualise the stats from the OHLC and candlesticks bar graphs.  
 1. Go into server directory and run "npm run dev"
 2. Go into root directory and run "npm start"
-3. email for testing-w@mail.com password-111222
+3. email for testing- w@mail.com password-111222
 ## Credits  
 * (UI19CO04) Aditya Paul  
 * (UI19CO08) Anash Shelat  
