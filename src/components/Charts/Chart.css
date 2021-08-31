@@ -1,0 +1,11 @@
+.ChartContainer{
+    background-color: rgba(177, 177, 177, 0.333);
+    padding: 20px;
+    margin: 30px 0px;
+    border-radius: 20px;
+}
+
+.ChartBox{
+    min-height: 60vh;
+    background-color: white;
+}

@@ -1,0 +1,23 @@
+.CompinfoContainer{
+    background-color: rgba(177, 177, 177, 0.333);
+    padding: 20px;
+    margin: 30px 0px;
+    border-radius: 20px;
+}
+
+.CompanyI{
+    background-color: white;
+    min-height: 30vh;
+}
+
+.moreinfo{
+    display: flex;
+    justify-content: right;
+    width: 100%; 
+}
+
+.moreinfoBtn{
+    background-color: rgb(0, 93, 255) !important;
+    color:white !important;
+    margin-right: 20px !important;
+}
