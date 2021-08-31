@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Login from './components/Login/Login';
 import { useState } from 'react';
+import Header from './components/Header/Header';
 
 function App() {
     const [comp, setComp] =useState("AAPL")
@@ -24,6 +25,8 @@ function App() {
                     <Route exact path="/home">
                         <div>
                             <Filters getCompany={company}/>
+                            <Header/>
+                            <Filters />
                             <Chart />
                             <Compinfo info={comp}/>
                         </div>
