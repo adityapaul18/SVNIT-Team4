@@ -22,7 +22,7 @@ function Filters() {
             endDate: dateto
         }
         console.log(data)
-        axios.get('www.localhost:5000/data', data)
+        axios.post('http://localhost:5000/data', data)
             .then((res) => {
                 console.log(res);
                 setchartdata(res)
