@@ -4,6 +4,11 @@ const filteredData = async (key, startDate, endDate) => {
   var data = fs.readFileSync('Stock_List.json');
 
   const jsonData = await JSON.parse(data);
+  if(!key){
+    const convertedSymbols = jsonData.map(item => item.symbol);
+    const filteredSymbols = convertedSymbols.filter((value, index) => convertedSymbols.indexOf(value) === index);
+    return filteredSymbols;
+  }
   const filteredData = jsonData.filter((item) => item.key === key);
   const simplifiedData = filteredData.map((item) => {
     return {
