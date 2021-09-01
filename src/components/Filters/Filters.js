@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import { Button, MenuItem, TextField } from '@material-ui/core'
+import React, { useEffect, useState } from 'react'
+import { Button, MenuItem, TextField } from '@material-ui/core';
+import { Autocomplete } from '@material-ui/lab';
 import './Filters.css';
 import moment from 'moment';
 import axios from 'axios';
@@ -11,6 +12,15 @@ function Filters(props) {
     const [todate, settodate] = useState(new Date())
     const [histname, sethistname] = useState("")
 
+    const [symbols,setSymbols] = useState([]);
+    useEffect(() => {
+        axios.post('http://localhost:5000/')
+            .then((res) => {
+                console.log(res.data);
+                setSymbols(res.data);
+            })
+            .catch((err) => console.log(err))
+    }, [])
 
     const ftch = () => {
         var dateto = moment(todate).format('YYYY-MM-DD');
@@ -28,18 +38,25 @@ function Filters(props) {
             })
             .catch((err) => console.log(err))
     }
-
     return (
         <div className="filterContainer" >
             <div>
-                <TextField value={comp} onChange={(e) => { setcomp(e.target.value); props.getCompany(e.target.value) }} className="Filters" select variant="outlined" label="Company">
+                <Autocomplete
+                className="Filters"
+                id="combo-box-demo"
+                options={symbols}
+                getOptionLabel={(option) => option}
+                style={{ width: 300 }}
+                renderInput={(params) => <TextField {...params} label="Search Stocks" variant="outlined" onBlur ={(e) => {setcomp(e.target.value);props.getCompany(e.target.value)}}/>}
+                />
+                {/* <TextField value={comp} onChange={(e) => { setcomp(e.target.value); props.getCompany(e.target.value) }} className="Filters" select variant="outlined" label="Company">
                     <MenuItem key="AMZN" value="AMZN">AMZN</MenuItem>
                     <MenuItem key="TSLA" value="TSLA">TSLA</MenuItem>
                     <MenuItem key="WMT" value="WMT">WMT</MenuItem>
                     <MenuItem key="BAC" value="BAC">BAC</MenuItem>
                     <MenuItem key="MA" value="MA">MA</MenuItem>
                     <MenuItem key="PG" value="PG">PG</MenuItem>
-                </TextField>
+                </TextField> */}
                 from <TextField value={fromdate} onChange={(e) => { setfromdate(e.target.value) }} className="Filters" type="date" variant="outlined" />
                 to <TextField value={todate} onChange={(e) => { settodate(e.target.value) }} className="Filters" type="date" variant="outlined" />
                 <Button className="moreinfoBtn" variant="contained" onClick={() => ftch()} >Filter</Button>
