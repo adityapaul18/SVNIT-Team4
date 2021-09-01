@@ -23,7 +23,7 @@ function Compinfo(props) {
         }
         isInitial = false;
     }, [props.info])
-    function clickToggleHandler(){
+    const clickToggleHandler =() => {
         setShowInfo(true);    
     }
     return (
