@@ -42,6 +42,7 @@ function Filters(props) {
         <div className="filterContainer" >
             <div>
                 <Autocomplete
+                className="Filters"
                 id="combo-box-demo"
                 options={symbols}
                 getOptionLabel={(option) => option}
