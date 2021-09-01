@@ -46,16 +46,16 @@ function Filters(props) {
                 options={symbols}
                 getOptionLabel={(option) => option}
                 style={{ width: 300 }}
-                renderInput={(params) => <TextField {...params} label="Search Stocks" variant="outlined" onBlur ={(e) => {props.getCompany(e.target.value)}}/>}
+                renderInput={(params) => <TextField {...params} label="Search Stocks" variant="outlined" onBlur ={(e) => {setcomp(e.target.value);props.getCompany(e.target.value)}}/>}
                 />
-                <TextField value={comp} onChange={(e) => { setcomp(e.target.value); props.getCompany(e.target.value) }} className="Filters" select variant="outlined" label="Company">
+                {/* <TextField value={comp} onChange={(e) => { setcomp(e.target.value); props.getCompany(e.target.value) }} className="Filters" select variant="outlined" label="Company">
                     <MenuItem key="AMZN" value="AMZN">AMZN</MenuItem>
                     <MenuItem key="TSLA" value="TSLA">TSLA</MenuItem>
                     <MenuItem key="WMT" value="WMT">WMT</MenuItem>
                     <MenuItem key="BAC" value="BAC">BAC</MenuItem>
                     <MenuItem key="MA" value="MA">MA</MenuItem>
                     <MenuItem key="PG" value="PG">PG</MenuItem>
-                </TextField>
+                </TextField> */}
                 from <TextField value={fromdate} onChange={(e) => { setfromdate(e.target.value) }} className="Filters" type="date" variant="outlined" />
                 to <TextField value={todate} onChange={(e) => { settodate(e.target.value) }} className="Filters" type="date" variant="outlined" />
                 <Button className="moreinfoBtn" variant="contained" onClick={() => ftch()} >Filter</Button>
