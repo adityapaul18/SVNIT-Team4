@@ -1,11 +1,22 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Avatar, Button, IconButton, MenuItem, TextField } from '@material-ui/core'
 import './Login.css'
 import { auth, provider } from '../../Firebase.js'
 import { useHistory } from 'react-router-dom'
 
 function Login() {
+    var user= localStorage.getItem("myuser")
+
     const history=useHistory()
+    const ff = () => {
+
+        if(user)
+            history.push('/home')
+    }
+
+    useEffect(() => {
+        ff()
+    }, [])
     const signin2 = () => {
         auth.signInWithEmailAndPassword(mail,password).then((userAuth) => {
             localStorage.setItem("myuser" , userAuth.user.displayName) 

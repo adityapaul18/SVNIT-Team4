@@ -34,7 +34,7 @@ function Filters(props) {
         axios.post('http://localhost:5000/data', data)
             .then((res) => {
                 console.log(res);
-                props.setchartdata(res)
+                props.setchartdata(res.data)
             })
             .catch((err) => console.log(err))
     }
@@ -60,11 +60,7 @@ function Filters(props) {
                 to <TextField value={todate} onChange={(e) => { settodate(e.target.value) }} className="Filters" type="date" variant="outlined" />
                 <Button className="moreinfoBtn" variant="contained" onClick={() => ftch()} >Filter</Button>
             </div>
-            <div><TextField value={histname} onChange={(e) => { sethistname(e.target.value) }} className="Filters" select variant="outlined" label="History">
-                <MenuItem key="aa" value="aa">aa</MenuItem>
-                <MenuItem key="aa" value="aa">aa</MenuItem>
-                <MenuItem key="aa" value="aa">aa</MenuItem>
-            </TextField></div>
+            <div></div>
         </div>
     )
 }

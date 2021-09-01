@@ -27,9 +27,8 @@ function App() {
                         <div>
                             <Header/>
                             <Filters chartdata={chartdata} setchartdata={setchartdata}  getCompany={company}/>
-                            {/* <Filters /> */}
-                            <Chart />
-                            <Compinfo info={comp}/>
+                            <Chart chartdata={chartdata} />
+                            <Compinfo chartdata={chartdata} info={comp}/>
                         </div>
                     </Route>
                     <Route exact path="/login">
